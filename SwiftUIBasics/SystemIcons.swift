@@ -1,0 +1,18 @@
+//
+//  SystemIcons.swift
+//  SwiftUIBasics
+//
+//  Created by Sakshi Shrivastava on 2/21/26.
+//
+
+import SwiftUI
+
+struct SystemIcons: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    SystemIcons()
+}
