@@ -9,7 +9,22 @@ import SwiftUI
 
 struct Images: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        Image("michael")
+//            .resizable()
+//            .scaledToFill()
+//            .frame(width: 300, height: 300)
+//            .clipShape(
+//                RoundedRectangle(cornerRadius: 150)
+//            )
+        
+        Image("google")
+            .renderingMode(.template)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 300, height: 300)
+            // .foregroundColor(.red)
+        
+            // need to get an image with transparent backgraound for the foreground color to work.
     }
 }
 

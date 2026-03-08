@@ -7,12 +7,34 @@
 
 import SwiftUI
 
-struct ForEach: View {
+struct ForEachExample: View {
+    
+    let data = ["Hi", "Hello", "Hey Everyone"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+//            ForEach(0..<9, content: { index in
+//                HStack {
+//                    Circle()
+//                        .frame(width: 30, height: 30)
+//                    
+//                    Text("index is: \(index)")
+//                }
+//            })
+            
+            // if you want to use indices
+            ForEach(data.indices) { item in
+                Text("\(data[item]): index is \(item)")
+            }
+            
+            // If you directly want to print the items
+            ForEach(data, id: \.self) { item in
+                Text("\(item)")
+            }
+        }
     }
 }
 
 #Preview {
-    ForEach()
+    ForEachExample()
 }
